@@ -1,0 +1,15 @@
+{% extends 'blogs.html' %}
+{% block mudar %}
+<div class="forms">
+    <form action="{{mudar_imagem}}" method="POST" enctype="multipart/form-data" style="display: flex;flex-direction: column;">{% csrf_token %}
+        <input type="file" name="file" id="file" placeholder="imagem">
+        <div>
+            <label for="per">Deixar sem imagem</label>
+            <input type="checkbox" name="img" id="img" onclick="go(this)">
+        </div>
+        <input type="submit" value="enviar">
+    </form>
+</div>
+{% load static %}
+<script src="{% static 'index.js' %}"></script>
+{% endblock %}

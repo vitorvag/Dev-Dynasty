@@ -1,0 +1,9 @@
+{% extends 'blogs.html' %}
+{% block atualizar %}
+<div class="forms">
+    <form action="{{atualizar}}" method="post"> {% csrf_token %}
+        <textarea name="atualizacao" id="atualizacao" cols="14" rows="10"  axlength="140"></textarea>
+        <input type="submit" value="enviar">
+    </form>
+</div>
+{% endblock %}

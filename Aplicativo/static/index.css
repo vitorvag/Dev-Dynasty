@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  overflow-x: hidden;
+}
+
+header {
+  background-color: #0C0CE9;
+}
+
+a {
+  text-decoration: none;
+  color: #fafafa;
+  font-size: 140%;
+}
+
+#bloco-blogs {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+  background-color: rgba(217, 217, 217, 1);
+  border-radius: 34px;
+  padding: 20px;
+}
+
+h5 {
+  display: inline;
+}
+
+#sair {
+  background-color: #0094FF;
+  border: #0094FF;
+  padding: 10px;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#landpage {
+  background: url(../../media/imgs/Rectangle\ 4.png) no-repeat;
+  overflow-x:hidden;
+  background-size: cover;
+  width: auto;
+  height: 800px;
+  background-position: center;
+  box-shadow: inset 1em 0em 25em #fafafa;
+}
+
+.tecnologia {
+  color: #0094FF;
+}
+
+.text-1 {
+  font-size: 120px;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800%;
+  font-style: normal;
+}
+
+#danilo {
+  background-color: #0C0CE9;
+  width: 100%;
+}
+
+.lopes {
+  background-color: #f0d803;
+}
+
+.circle-1 {
+  width: 40px;
+  height: 40px;
+  background-color: darkgray;
+  border-radius: 50px;
+}
+
+.box-1 {
+  background-color: aliceblue;
+  height: 70%;
+}
+
+.preto {
+  border-radius: 190px;
+}
+#posts{
+height: auto;
+width: 100vw;
+background-color: rgb(187, 175, 159);
+padding: 60px 0; 
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+align-items: start;
+flex-direction: row;
+
+
+}
+.post .primeira img{
+width: 30px;
+height: 30px;
+border-radius: 100%;
+object-fit: cover;
+
+}
+
+.primeira img{
+  max-width: 100%;
+}
+.primeira{
+display: flex;
+align-items: center;
+padding: 0px 0px 11px 0px;
+}
+.primeira h3{
+width: 100%;
+padding-left: 10px;
+font-size: 124%;
+text-transform: capitalize;
+}
+.segunda{
+border-top: 1px solid gray; 
+margin-top: -7px;
+height: 100%;
+}
+
+.segunda p:nth-child(1){
+text-align: justify;
+padding-left: 10px;
+margin-top: 4px;
+overflow-wrap: break-word;
+border-bottom: 1px solid black;
+height: 173px;
+}
+
+.segunda p:nth-child(2){
+height: auto;
+display: flex;
+flex-direction: row-reverse;
+padding-right: 10px;
+margin-top: -8px;
+}
+.acoes{
+margin-top: -5px;
+padding: 5px;
+display: flex;
+justify-content: space-around;
+border: 1px solid gray;
+border-radius: 20px;
+}
+.acoes a{
+text-transform: uppercase;
+font-family: 'Courier New', Courier, monospace;
+font-weight: 700;
+text-decoration: none;
+color: black;
+font-size: 104%;
+}
+.acoes a:hover{
+border-bottom: 1px dashed black;
+text-shadow: 1px 1px 1px aqua;
+}
+.post{
+border: 3px double rgb(122, 97, 97);
+padding: 10px;
+margin-top: 5px;
+border-radius: 20px;
+background-color: whitesmoke;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+width: 220px;
+}
+
+.recent{
+  font-size: 76px;
+}

@@ -1,0 +1,52 @@
+.men{
+    color: #c5baba;
+position: absolute;
+top: 0;
+text-transform: uppercase;
+font-weight: 800;
+background-color: darkblue;
+padding: 3px 13px;
+border-radius: 20px;
+list-style-type: none;
+animation-name: vai;
+animation-duration: 2s;
+animation-timing-function: linear;
+animation-iteration-count: 1;
+animation-fill-mode: forwards;
+z-index: 1;
+  }
+  @keyframes vai {
+    0%{
+      top: 0px;
+    }
+    50%{
+      top: 100px
+    }
+    100%{
+      top: 100px
+    }
+    
+  }
+  .messages{
+    display: flex;
+    justify-content: center;
+  }
+
+    /* CSS for animated background */
+  .animated-background {
+      background: linear-gradient(to top left, #0b52eb, #e8eaee, #f7f307);
+      background-size: 400% 400%;
+      animation: gradientAnimation 15s ease infinite;
+  }
+
+  @keyframes gradientAnimation {
+      0% {
+          background-position: 0% 50%;
+      }
+      50% {
+          background-position: 100% 50%;
+      }
+      100% {
+          background-position: 0% 50%;
+      }
+  }

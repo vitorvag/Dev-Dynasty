@@ -1,0 +1,18 @@
+{% extends 'blogs.html' %}
+{% block delete %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'blog.css' %}">
+<div class="forms">
+    <form action="{{deletar}}" method="post" id="deletar">{% csrf_token %}
+        <p>Tem certeza que deseja deletar o post?</p>
+        <label for="sim">sim</label>
+        <input type="checkbox" name="sim" id="sim" onclick="vai(this)">
+        <label for="nao">Não</label>
+        <input type="checkbox" name="nao" id="nao" onclick="vai(this)">
+        <input type="submit" value="submit">
+    </form>
+</div>
+
+
+
+{% endblock %}

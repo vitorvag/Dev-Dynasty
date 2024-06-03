@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+html{
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 0;
+    padding: 0 0 0 0; 
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+}
+.forms{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    backdrop-filter: blur(20px);
+   
+}
+.posts{
+    height: auto;
+    width: 100vw;
+    background-color: rgb(187, 175, 159);
+    padding: 16px 0px; 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: start;
+    flex-direction: row;
+    
+}
+#formselect{
+    padding: 10px 62px 3px 0;
+    display: flex;
+    justify-content: flex-end;
+}
+#formselect select{
+    padding: 3px;
+    border-radius: 10px;
+    background-color: #0194FF;
+    color: #fafafa;
+    text-transform: uppercase;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+#formselect input[type="submit"]{
+    border-radius: 10px;
+    border: 1px solid black;
+    background-color: transparent;
+    outline: none;
+    text-transform: uppercase;
+    margin-left: 10px;
+}
+.post .primeira img{
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    object-fit: cover;
+
+}
+.primeira{
+    display: flex;
+    align-items: center;
+    padding: 0px 0px 11px 0px;
+}
+.primeira h3{
+    width: 100%;
+    padding-left: 10px;
+    font-size: 124%;
+    text-transform: capitalize;
+}
+.segunda{
+    border-top: 1px solid gray; 
+    margin-top: -7px;
+    height: 100%;
+}
+
+.segunda p:nth-child(1){
+    text-align: justify;
+    padding-left: 10px;
+    margin-top: 4px;
+    overflow-wrap: break-word;
+    border-bottom: 1px solid black;
+    height: 173px;
+}
+
+.segunda p:nth-child(2){
+    height: auto;
+    display: flex;
+    flex-direction: row-reverse;
+    padding-right: 10px;
+    margin-top: -8px;
+}
+.acoes{
+    margin-top: -5px;
+    padding: 5px;
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid gray;
+    border-radius: 20px;
+}
+.acoes a{
+    text-transform: uppercase;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 700;
+    text-decoration: none;
+    color: black;
+    font-size: 104%;
+}
+.acoes a:hover{
+    border-bottom: 1px dashed black;
+    text-shadow: 1px 1px 1px aqua;
+}
+.post{
+    border: 3px double rgb(122, 97, 97);
+    padding: 10px;
+    border-radius: 20px;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 220px;
+}
+.menu{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 50px;
+    background-color: rgb(85, 85, 85);
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.menu a{
+    font-size: 0.8em;
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    font-family: Copperplate, Papyrus, fantasy;
+    font-weight: 700;
+}
+.forms form input[type="file"]{
+    background-color: transparent;
+    font-family: cursive;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.forms form input[type="file"]::file-selector-button{
+    border: none;
+    border-bottom: 1px solid black;
+    background-color: transparent;
+    font-family: cursive;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.forms form input[type="file"]::file-selector-button:hover, .forms form input[type="submit"]:hover, .menu a:hover{
+    border-bottom: 1px dashed black;
+    text-shadow: 1px 1px 1px aqua;
+
+}
+.forms form div label{
+    font-family: cursive;
+}
+.forms form input[type="submit"]{
+    font-family: cursive;
+    text-transform: uppercase;
+    margin-top: 5px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px dashed black;
+    width: 70px;
+    align-self: center;
+    font-weight: 700;
+}
+
+.forms form{
+    border: 1px solid black;
+    padding: 20px;
+    border-radius: 20px;
+}
+#postar{
+    display: flex;
+    flex-direction: column;
+}
+textarea{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid rgb(206, 34, 34);
+    font-family: cursive;
+    width: 304px;
+    height: 76px;
+}
+header{
+background-color: #0C0CE9;
+}
+
+
+a{
+text-decoration: none;
+color: #fafafa;
+font-size: 140%;
+
+
+}
+
+#blogs{
+color: #0194FF;
+}
+
+#sair{
+background-color: #0094FF;
+border: #0094FF;
+padding: 10px;
+font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+#T-blogs{
+text-decoration:underline;
+font-family: "Inter", sans-serif;
+font-optical-sizing: auto;
+font-size: 800%;
+font-weight: 800%;
+font-style: normal;
+
+}
+.men{
+    color: #c5baba;
+position: absolute;
+top: 0;
+text-transform: uppercase;
+font-weight: 800;
+background-color: darkblue;
+padding: 3px 13px;
+border-radius: 20px;
+list-style-type: none;
+animation-name: vai;
+animation-duration: 2s;
+animation-timing-function: linear;
+animation-iteration-count: 1;
+animation-fill-mode: forwards;
+z-index: 1;
+  }
+  @keyframes vai {
+    0%{
+      top: 0px;
+    }
+    50%{
+      top: 100px
+    }
+    100%{
+      top: 100px
+    }
+    
+  }
+  .messages{
+    display: flex;
+    justify-content: center;
+  }
